@@ -1,7 +1,7 @@
 "use client";
 
 import { ArrowUpRight, Menu, X } from "lucide-react";
-import { useState } from "react";
+import { type MouseEvent, useState } from "react";
 
 const navigation = [
   { label: "Features", href: "#features" },
@@ -28,6 +28,16 @@ export default function Navbar({ onOpenModal }: NavbarProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const closeMenu = () => setIsMenuOpen(false);
+  const handleMobileAnchorClick = (event: MouseEvent<HTMLAnchorElement>) => {
+    const targetId = event.currentTarget.getAttribute("href");
+    if (!targetId?.startsWith("#")) return;
+
+    event.preventDefault();
+    closeMenu();
+    requestAnimationFrame(() => {
+      document.querySelector(targetId)?.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+  };
 
   return (
     <header className="sticky top-0 z-50 border-b border-slate-200/60 bg-white/80 backdrop-blur-md">
@@ -91,7 +101,7 @@ export default function Navbar({ onOpenModal }: NavbarProps) {
               <a
                 key={item.label}
                 href={item.href}
-                onClick={closeMenu}
+                onClick={handleMobileAnchorClick}
                 className="rounded-xl px-3 py-3 text-sm font-semibold text-slate-700 hover:bg-slate-50 hover:text-[#0066FF]"
               >
                 {item.label}

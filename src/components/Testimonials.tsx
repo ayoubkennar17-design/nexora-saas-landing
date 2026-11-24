@@ -34,7 +34,7 @@ export default function Testimonials() {
         <div className="mx-auto max-w-2xl text-center">
           <p className="text-[11px] font-bold uppercase tracking-[0.18em] text-[#0066FF]">Proof in the numbers</p>
           <h2 className="mt-4 font-[family-name:var(--font-plus-jakarta)] text-3xl font-extrabold leading-[1.08] tracking-[-0.06em] text-[#060E1F] sm:text-4xl lg:text-[46px]">Loved by Revenue &amp; Product Leaders</h2>
-          <p className="mt-5 text-base leading-7 text-slate-500 sm:text-lg">The teams moving fastest use Nexora to turn customer intelligence into their next confident decision.</p>
+          <p className="mt-5 text-base leading-7 text-slate-600 sm:text-lg">The teams moving fastest use Nexora to turn customer intelligence into their next confident decision.</p>
         </div>
 
         <div className="mt-14 grid gap-5 lg:grid-cols-3">
@@ -52,7 +52,7 @@ export default function Testimonials() {
                 <div className={`flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br ${testimonial.avatar} font-[family-name:var(--font-plus-jakarta)] text-[11px] font-extrabold text-white ring-4 ring-white`} aria-hidden="true">{testimonial.initials}</div>
                 <div>
                   <p className="text-sm font-extrabold text-[#060E1F]">{testimonial.name}</p>
-                  <p className="mt-0.5 text-xs font-medium text-slate-400">{testimonial.role}</p>
+                  <p className="mt-0.5 text-xs font-medium text-slate-600">{testimonial.role}</p>
                 </div>
               </div>
             </article>

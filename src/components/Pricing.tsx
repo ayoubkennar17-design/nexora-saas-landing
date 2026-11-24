@@ -54,7 +54,7 @@ export default function Pricing({ onOpenModal }: PricingProps) {
             <h2 className="mt-4 font-[family-name:var(--font-plus-jakarta)] text-3xl font-extrabold leading-[1.08] tracking-[-0.06em] text-[#060E1F] sm:text-4xl lg:text-[46px]">
               Start with clarity. Scale with confidence.
             </h2>
-            <p className="mt-5 max-w-xl text-base leading-7 text-slate-500 sm:text-lg">
+            <p className="mt-5 max-w-xl text-base leading-7 text-slate-600 sm:text-lg">
               Put every revenue signal to work without adding another layer of complexity to your stack.
             </p>
           </div>
@@ -64,7 +64,7 @@ export default function Pricing({ onOpenModal }: PricingProps) {
               type="button"
               onClick={() => setBillingCycle("monthly")}
               aria-pressed={billingCycle === "monthly"}
-              className={`rounded-full px-4 py-2.5 text-xs font-bold transition-all ${billingCycle === "monthly" ? "bg-[#060E1F] text-white shadow-sm" : "text-slate-500 hover:text-[#060E1F]"}`}
+              className={`rounded-full px-4 py-2.5 text-xs font-bold transition-all ${billingCycle === "monthly" ? "bg-[#060E1F] text-white shadow-sm" : "text-slate-600 hover:text-[#060E1F]"}`}
             >
               Monthly
             </button>
@@ -72,7 +72,7 @@ export default function Pricing({ onOpenModal }: PricingProps) {
               type="button"
               onClick={() => setBillingCycle("annual")}
               aria-pressed={billingCycle === "annual"}
-              className={`rounded-full px-4 py-2.5 text-xs font-bold transition-all ${billingCycle === "annual" ? "bg-[#0066FF] text-white shadow-sm" : "text-slate-500 hover:text-[#060E1F]"}`}
+              className={`rounded-full px-4 py-2.5 text-xs font-bold transition-all ${billingCycle === "annual" ? "bg-[#0066FF] text-white shadow-sm" : "text-slate-600 hover:text-[#060E1F]"}`}
             >
               Annual <span className="hidden sm:inline">(Save 20%)</span>
               <span className="ml-1.5 rounded-full bg-white/20 px-1.5 py-0.5 text-[10px] sm:hidden">-20%</span>
@@ -102,12 +102,12 @@ export default function Pricing({ onOpenModal }: PricingProps) {
                   </div>
                   {plan.featured && <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-blue-50 text-[#0066FF]"><Zap size={17} fill="currentColor" /></span>}
                 </div>
-                <p className="mt-4 min-h-[72px] text-sm leading-6 text-slate-500">{plan.description}</p>
+                <p className="mt-4 min-h-[72px] text-sm leading-6 text-slate-600">{plan.description}</p>
                 <div className="mt-6 flex items-end gap-2 border-t border-slate-100 pt-6">
                   <span className="font-[family-name:var(--font-plus-jakarta)] text-4xl font-extrabold tracking-[-0.07em] text-[#060E1F]">{price}</span>
-                  {!isCustom && <span className="mb-1 text-xs font-semibold text-slate-400">/mo</span>}
+                  {!isCustom && <span className="mb-1 text-xs font-semibold text-slate-600">/mo</span>}
                 </div>
-                <p className="mt-1 h-5 text-[11px] font-medium text-slate-400">
+                <p className="mt-1 h-5 text-[11px] font-medium text-slate-600">
                   {isCustom ? "Tailored to your operating model" : billingCycle === "annual" ? "Billed annually" : "Billed monthly"}
                 </p>
                 <button
@@ -118,7 +118,7 @@ export default function Pricing({ onOpenModal }: PricingProps) {
                   {plan.cta}
                 </button>
                 <div className="mt-8 border-t border-slate-100 pt-6">
-                  <p className="text-[10px] font-bold uppercase tracking-[0.14em] text-slate-400">Everything included</p>
+                  <p className="text-[10px] font-bold uppercase tracking-[0.14em] text-slate-600">Everything included</p>
                   <ul className="mt-4 space-y-3">
                     {plan.details.map((detail) => (
                       <li key={detail} className="flex items-start gap-2.5 text-sm font-medium text-slate-600">
@@ -132,7 +132,7 @@ export default function Pricing({ onOpenModal }: PricingProps) {
             );
           })}
         </div>
-        <p className="mt-8 flex items-center justify-center gap-1.5 text-center text-xs font-semibold text-slate-400"><ChevronDown size={14} className="text-[#0066FF]" /> All plans include a 14-day free trial and no credit card required.</p>
+        <p className="mt-8 flex items-center justify-center gap-1.5 text-center text-xs font-semibold text-slate-600"><ChevronDown size={14} className="text-[#0066FF]" /> All plans include a 14-day free trial and no credit card required.</p>
       </div>
     </section>
   );

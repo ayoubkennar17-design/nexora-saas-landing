@@ -86,7 +86,7 @@ function MetricCard({
   return (
     <div className="rounded-2xl border border-slate-200/80 bg-white p-4 shadow-[0_8px_30px_-20px_rgba(15,23,42,0.3)] sm:p-5">
       <div className="mb-4 flex items-center justify-between gap-2">
-        <span className="text-[11px] font-semibold uppercase tracking-[0.1em] text-slate-400">{label}</span>
+        <span className="text-[11px] font-semibold uppercase tracking-[0.1em] text-slate-600">{label}</span>
         <span className={`flex h-7 w-7 items-center justify-center rounded-lg ${iconClassName}`}>{icon}</span>
       </div>
       <div className="flex items-end justify-between gap-2">
@@ -121,7 +121,7 @@ export default function Hero({ onOpenModal, onOpenDemo }: HeroProps) {
             <h1 className="mx-auto mt-7 max-w-4xl font-[family-name:var(--font-plus-jakarta)] text-[clamp(2.75rem,7vw,5.75rem)] font-extrabold leading-[0.98] tracking-[-0.065em] text-[#060E1F]">
               Turn Raw Customer Data Into <span className="text-[#0066FF]">Predictable Revenue</span>
             </h1>
-            <p className="mx-auto mt-7 max-w-2xl text-base leading-7 text-slate-500 sm:text-lg sm:leading-8">
+            <p className="mx-auto mt-7 max-w-2xl text-base leading-7 text-slate-600 sm:text-lg sm:leading-8">
               Nexora gives B2B teams one intelligent workspace to automate churn prediction, surface pipeline risk, and turn customer signals into confident revenue decisions—in minutes, not months.
             </p>
 
@@ -149,8 +149,8 @@ export default function Hero({ onOpenModal, onOpenDemo }: HeroProps) {
                 Watch Live Demo
               </button>
             </div>
-            <p className="mt-5 text-[11px] font-semibold tracking-wide text-slate-400 sm:text-xs">
-              No credit card required <span className="mx-2 text-slate-300">•</span> SOC2 Type II Certified <span className="mx-2 text-slate-300">•</span> Setup in 5 minutes
+            <p className="mt-5 text-[11px] font-semibold tracking-wide text-slate-600 sm:text-xs">
+              No credit card required <span className="mx-2 text-slate-500">•</span> SOC2 Type II Certified <span className="mx-2 text-slate-500">•</span> Setup in 5 minutes
             </p>
           </div>
 
@@ -163,7 +163,7 @@ export default function Hero({ onOpenModal, onOpenDemo }: HeroProps) {
                   </div>
                   <div>
                     <p className="font-[family-name:var(--font-plus-jakarta)] text-xs font-extrabold tracking-tight text-[#060E1F] sm:text-sm">Revenue Command Center</p>
-                    <p className="mt-0.5 hidden text-[10px] font-medium text-slate-400 sm:block">Workspace / Executive overview</p>
+                    <p className="mt-0.5 hidden text-[10px] font-medium text-slate-600 sm:block">Workspace / Executive overview</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-2 sm:gap-3">
@@ -178,7 +178,7 @@ export default function Hero({ onOpenModal, onOpenDemo }: HeroProps) {
                 <div>
                   <div className="mb-5 flex flex-col justify-between gap-3 sm:flex-row sm:items-center">
                     <div>
-                      <p className="text-[11px] font-semibold uppercase tracking-[0.12em] text-slate-400">Revenue overview</p>
+                      <p className="text-[11px] font-semibold uppercase tracking-[0.12em] text-slate-600">Revenue overview</p>
                       <h2 className="mt-1 font-[family-name:var(--font-plus-jakarta)] text-lg font-extrabold tracking-[-0.04em] text-[#060E1F] sm:text-xl">Growth is trending up</h2>
                     </div>
                     <div className="flex w-fit items-center rounded-lg border border-slate-200 bg-slate-50 p-1">
@@ -187,7 +187,7 @@ export default function Hero({ onOpenModal, onOpenDemo }: HeroProps) {
                           type="button"
                           key={option}
                           onClick={() => setRange(option)}
-                          className={`rounded-md px-3 py-1.5 text-[10px] font-bold transition-all sm:px-3.5 ${range === option ? "bg-white text-[#0066FF] shadow-sm" : "text-slate-400 hover:text-slate-700"}`}
+                          className={`rounded-md px-3 py-1.5 text-[10px] font-bold transition-all sm:px-3.5 ${range === option ? "bg-white text-[#0066FF] shadow-sm" : "text-slate-600 hover:text-slate-700"}`}
                           aria-pressed={range === option}
                         >
                           {option}
@@ -223,10 +223,10 @@ export default function Hero({ onOpenModal, onOpenDemo }: HeroProps) {
                   <div className="mt-4 rounded-2xl border border-slate-200/80 bg-white p-4 sm:p-5">
                     <div className="flex items-center justify-between">
                       <div>
-                        <p className="text-[11px] font-semibold uppercase tracking-[0.1em] text-slate-400">Revenue momentum</p>
-                        <p className="mt-1 text-xs font-medium text-slate-500">{data.chartLabel} <span className="mx-1.5 text-slate-300">•</span> <span className="font-bold text-emerald-600">+18.6% vs previous period</span></p>
+                        <p className="text-[11px] font-semibold uppercase tracking-[0.1em] text-slate-600">Revenue momentum</p>
+                        <p className="mt-1 text-xs font-medium text-slate-600">{data.chartLabel} <span className="mx-1.5 text-slate-500">•</span> <span className="font-bold text-emerald-600">+18.6% vs previous period</span></p>
                       </div>
-                      <button type="button" onClick={() => onOpenModal("Revenue report demo")} className="hidden items-center gap-1 text-[10px] font-bold text-slate-400 sm:flex">
+                      <button type="button" onClick={() => onOpenModal("Revenue report demo")} className="hidden items-center gap-1 text-[10px] font-bold text-slate-600 sm:flex">
                         Export report <ArrowRight size={12} />
                       </button>
                     </div>
@@ -242,7 +242,7 @@ export default function Hero({ onOpenModal, onOpenDemo }: HeroProps) {
                         </div>
                       ))}
                     </div>
-                    <div className="mt-2 flex justify-between text-[9px] font-semibold text-slate-300">
+                    <div className="mt-2 flex justify-between text-[9px] font-semibold text-slate-600">
                       <span>MON</span><span>TUE</span><span>WED</span><span>THU</span><span>FRI</span><span>SAT</span><span>SUN</span>
                     </div>
                   </div>
@@ -283,8 +283,8 @@ export default function Hero({ onOpenModal, onOpenDemo }: HeroProps) {
               </div>
 
               <div className="flex items-center gap-5 border-t border-slate-100 bg-slate-50/60 px-4 py-3 sm:px-6">
-                <div className="flex items-center gap-1.5 text-[10px] font-semibold text-slate-400"><Clock3 size={12} /> Synced 2 min ago</div>
-                <div className="hidden items-center gap-1.5 text-[10px] font-semibold text-slate-400 sm:flex"><Check size={12} className="text-emerald-500" /> 4 data sources connected</div>
+                <div className="flex items-center gap-1.5 text-[10px] font-semibold text-slate-600"><Clock3 size={12} /> Synced 2 min ago</div>
+                <div className="hidden items-center gap-1.5 text-[10px] font-semibold text-slate-600 sm:flex"><Check size={12} className="text-emerald-500" /> 4 data sources connected</div>
                 <button type="button" onClick={() => onOpenModal("Data connection demo")} className="ml-auto flex items-center gap-1 text-[10px] font-bold text-[#0066FF]">Manage data <ChevronDown size={12} /></button>
               </div>
             </div>

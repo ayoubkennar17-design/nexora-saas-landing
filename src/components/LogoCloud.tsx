@@ -55,14 +55,14 @@ export default function LogoCloud() {
   return (
     <section className="border-y border-slate-100 bg-white px-5 py-8 sm:px-8 lg:px-10" aria-label="Nexora customers">
       <div className="mx-auto flex max-w-7xl flex-col items-center gap-6 lg:flex-row lg:justify-between lg:gap-10">
-        <p className="text-center text-[10px] font-bold uppercase tracking-[0.18em] text-slate-400 lg:text-left">
+        <p className="text-center text-[10px] font-bold uppercase tracking-[0.18em] text-slate-600 lg:text-left">
           Trusted by 2,400+ high-growth teams worldwide
         </p>
         <div className="grid w-full grid-cols-2 items-center gap-x-5 gap-y-5 sm:grid-cols-5 sm:gap-6 lg:max-w-3xl lg:gap-8">
           {logos.map((logo) => (
             <div
               key={logo.name}
-              className="group flex items-center justify-center gap-2 text-slate-400 transition-colors duration-200 hover:text-[#0066FF]"
+              className="group flex items-center justify-center gap-2 text-slate-600 transition-colors duration-200 hover:text-[#0066FF]"
               title={logo.name}
             >
               {logo.mark}

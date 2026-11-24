@@ -45,7 +45,7 @@ function StandardFeatureCard({
     <article className="group flex min-h-[255px] flex-col rounded-[24px] border border-slate-200/80 bg-white p-6 transition-all duration-300 hover:-translate-y-1 hover:border-blue-200 hover:shadow-[0_22px_55px_-28px_rgba(15,23,42,0.42)] sm:p-7">
       <FeatureIcon className={iconClassName}>{icon}</FeatureIcon>
       <h3 className="mt-7 font-[family-name:var(--font-plus-jakarta)] text-[17px] font-extrabold tracking-[-0.04em] text-[#060E1F]">{title}</h3>
-      <p className="mt-3 text-sm leading-6 text-slate-500">{description}</p>
+      <p className="mt-3 text-sm leading-6 text-slate-600">{description}</p>
       {children}
       <ArrowUpRight size={17} className="mt-auto self-end text-slate-300 transition-all duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-[#0066FF]" />
     </article>
@@ -61,7 +61,7 @@ export default function FeaturesBento() {
           <h2 className="mt-4 font-[family-name:var(--font-plus-jakarta)] text-3xl font-extrabold leading-[1.08] tracking-[-0.06em] text-[#060E1F] sm:text-4xl lg:text-[46px]">
             Everything You Need to Scale Without Guesswork
           </h2>
-          <p className="mt-5 text-base leading-7 text-slate-500 sm:text-lg">
+          <p className="mt-5 text-base leading-7 text-slate-600 sm:text-lg">
             Turn disconnected data and manual handoffs into a system that spots the next best revenue move before your team has to ask.
           </p>
         </div>
@@ -71,12 +71,12 @@ export default function FeaturesBento() {
             <div className="relative z-10 max-w-sm">
               <FeatureIcon><Brain size={19} strokeWidth={2.2} /></FeatureIcon>
               <h3 className="mt-7 font-[family-name:var(--font-plus-jakarta)] text-2xl font-extrabold tracking-[-0.055em] text-[#060E1F] sm:text-[28px]">Predictive Churn &amp; Revenue AI</h3>
-              <p className="mt-3 max-w-md text-sm leading-6 text-slate-500">Know which accounts need attention, why they are at risk, and what action will protect the relationship—before renewal day.</p>
+              <p className="mt-3 max-w-md text-sm leading-6 text-slate-600">Know which accounts need attention, why they are at risk, and what action will protect the relationship—before renewal day.</p>
             </div>
             <div className="relative z-10 mt-8 rounded-2xl border border-slate-200/80 bg-[#F8FAFD] p-4 sm:p-5">
               <div className="flex items-center justify-between border-b border-slate-200/80 pb-3">
                 <div>
-                  <p className="text-[10px] font-bold uppercase tracking-[0.12em] text-slate-400">Account health radar</p>
+                  <p className="text-[10px] font-bold uppercase tracking-[0.12em] text-slate-600">Account health radar</p>
                   <p className="mt-1 text-xs font-semibold text-[#060E1F]">12 accounts need a closer look</p>
                 </div>
                 <span className="rounded-full bg-rose-50 px-2 py-1 text-[10px] font-bold text-rose-500">Live scoring</span>
@@ -152,7 +152,7 @@ export default function FeaturesBento() {
             title="Role-Based Team Permissions"
             description="Give every team the right level of visibility with simple, auditable workspace controls."
           >
-            <div className="mt-5 flex items-center gap-1.5 text-[11px] font-bold text-slate-400"><Lock size={13} /> Granular access controls</div>
+            <div className="mt-5 flex items-center gap-1.5 text-[11px] font-bold text-slate-600"><Lock size={13} /> Granular access controls</div>
           </StandardFeatureCard>
         </div>
 

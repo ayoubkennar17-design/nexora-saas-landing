@@ -35,7 +35,7 @@ export default function HowItWorks() {
               Revenue clarity in three simple steps.
             </h2>
           </div>
-          <p className="max-w-sm text-base leading-7 text-slate-500 lg:pb-1">
+          <p className="max-w-sm text-base leading-7 text-slate-600 lg:pb-1">
             No drawn-out implementation. Nexora turns the systems you already use into an always-on revenue intelligence layer.
           </p>
         </div>
@@ -51,8 +51,8 @@ export default function HowItWorks() {
                   <span className={`flex h-11 w-11 items-center justify-center rounded-xl ${step.accent}`}><Icon size={20} strokeWidth={2.1} /></span>
                 </div>
                 <h3 className="mt-8 max-w-[260px] font-[family-name:var(--font-plus-jakarta)] text-xl font-extrabold leading-tight tracking-[-0.045em] text-[#060E1F]">{step.title}</h3>
-                <p className="mt-4 text-sm leading-6 text-slate-500">{step.description}</p>
-                <div className="mt-8 flex items-center gap-2 border-t border-slate-100 pt-4 text-[11px] font-bold text-slate-400">
+                <p className="mt-4 text-sm leading-6 text-slate-600">{step.description}</p>
+                <div className="mt-8 flex items-center gap-2 border-t border-slate-100 pt-4 text-[11px] font-bold text-slate-600">
                   <span className="flex h-5 w-5 items-center justify-center rounded-full bg-emerald-50 text-emerald-600"><Check size={12} strokeWidth={3} /></span>
                   {index === 0 ? "Secure OAuth connection" : index === 1 ? "Signals update continuously" : "Actions run on your rules"}
                 </div>

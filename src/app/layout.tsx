@@ -13,6 +13,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://nexora-revenue.vercel.app"),
   title: "Nexora — AI-Powered Revenue & Workflow Intelligence",
   description:
     "Nexora gives B2B revenue teams an AI-powered command center for predicting churn, analyzing pipeline health, and turning customer data into predictable growth.",
@@ -30,6 +31,13 @@ export const metadata: Metadata = {
     type: "website",
     siteName: "Nexora",
     locale: "en_US",
+    url: "https://nexora-revenue.vercel.app",
+  },
+  twitter: {
+    card: "summary",
+    title: "Nexora - AI-Powered Revenue & Workflow Intelligence",
+    description:
+      "Predict churn, focus your pipeline, and grow revenue with one intelligent workspace built for modern B2B teams.",
   },
 };
 

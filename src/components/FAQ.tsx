@@ -36,7 +36,7 @@ export default function FAQ() {
           <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-blue-50 text-[#0066FF]"><MessageCircleQuestion size={20} /></div>
           <p className="mt-7 text-[11px] font-bold uppercase tracking-[0.18em] text-[#0066FF]">Questions, answered</p>
           <h2 className="mt-4 font-[family-name:var(--font-plus-jakarta)] text-3xl font-extrabold leading-[1.08] tracking-[-0.06em] text-[#060E1F] sm:text-4xl lg:text-[46px]">Everything you need to know before you scale.</h2>
-          <p className="mt-5 max-w-sm text-base leading-7 text-slate-500">Still evaluating? Our revenue team can walk through your stack, use case, and success criteria.</p>
+          <p className="mt-5 max-w-sm text-base leading-7 text-slate-600">Still evaluating? Our revenue team can walk through your stack, use case, and success criteria.</p>
           <a href="#pricing" className="mt-7 inline-flex items-center gap-2 text-sm font-bold text-[#0066FF] hover:text-[#0059df]">Talk to a revenue specialist <span aria-hidden="true">→</span></a>
         </div>
 
@@ -53,11 +53,11 @@ export default function FAQ() {
                   aria-controls={`faq-answer-${index}`}
                 >
                   <span className={`font-[family-name:var(--font-plus-jakarta)] text-base font-extrabold tracking-[-0.025em] transition-colors sm:text-[17px] ${isOpen ? "text-[#0066FF]" : "text-[#060E1F]"}`}>{item.question}</span>
-                  <span className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full transition-all ${isOpen ? "bg-[#0066FF] text-white" : "bg-slate-50 text-slate-400"}`}><ChevronDown size={16} className={`transition-transform duration-300 ${isOpen ? "rotate-180" : ""}`} /></span>
+                  <span className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full transition-all ${isOpen ? "bg-[#0066FF] text-white" : "bg-slate-50 text-slate-600"}`}><ChevronDown size={16} className={`transition-transform duration-300 ${isOpen ? "rotate-180" : ""}`} /></span>
                 </button>
                 <div id={`faq-answer-${index}`} className={`grid transition-[grid-template-rows] duration-300 ${isOpen ? "grid-rows-[1fr]" : "grid-rows-[0fr]"}`}>
                   <div className="overflow-hidden">
-                    <p className="max-w-2xl pb-6 pr-10 text-sm leading-6 text-slate-500">{item.answer}</p>
+                    <p className="max-w-2xl pb-6 pr-10 text-sm leading-6 text-slate-600">{item.answer}</p>
                   </div>
                 </div>
               </div>
