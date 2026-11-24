@@ -93,7 +93,7 @@ function MetricCard({
         <span className="font-[family-name:var(--font-plus-jakarta)] text-[21px] font-extrabold tracking-[-0.04em] text-[#060E1F] sm:text-[24px]">
           {value}
         </span>
-        <span className="mb-0.5 rounded-full bg-emerald-50 px-2 py-1 text-[10px] font-bold text-emerald-600">{change}</span>
+        <span className="mb-0.5 rounded-full bg-emerald-50 px-2 py-1 text-[10px] font-bold text-emerald-700">{change}</span>
       </div>
     </div>
   );
@@ -111,7 +111,7 @@ export default function Hero({ onOpenModal, onOpenDemo }: HeroProps) {
           <div className="mx-auto max-w-4xl text-center">
             <a
               href="#features"
-              className="group inline-flex items-center gap-2 rounded-full border border-blue-100 bg-blue-50/80 px-3 py-1.5 text-[11px] font-bold text-[#0066FF] transition-colors hover:border-blue-200 hover:bg-blue-50 sm:text-xs"
+              className="group inline-flex items-center gap-2 rounded-full border border-blue-100 bg-blue-50/80 px-3 py-1.5 text-[11px] font-bold text-blue-700 transition-colors hover:border-blue-200 hover:bg-blue-50 sm:text-xs"
             >
               <Sparkles size={13} fill="currentColor" />
               New: Nexora AI Forecasting Engine 2.0
@@ -143,7 +143,7 @@ export default function Hero({ onOpenModal, onOpenDemo }: HeroProps) {
                 onClick={onOpenDemo}
                 className="inline-flex h-13 w-full items-center justify-center gap-2 rounded-full border border-slate-200 bg-white px-7 text-sm font-bold text-[#060E1F] transition-all hover:-translate-y-0.5 hover:border-slate-300 hover:bg-slate-50 sm:w-auto"
               >
-                <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#E8F1FF] text-[#0066FF]">
+                <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#E8F1FF] text-blue-700">
                   <Play size={11} fill="currentColor" className="ml-0.5" />
                 </span>
                 Watch Live Demo
@@ -167,8 +167,8 @@ export default function Hero({ onOpenModal, onOpenDemo }: HeroProps) {
                   </div>
                 </div>
                 <div className="flex items-center gap-2 sm:gap-3">
-                  <div className="hidden items-center gap-1.5 rounded-full bg-emerald-50 px-2.5 py-1.5 text-[10px] font-bold text-emerald-600 sm:flex">
-                    <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" /> All systems healthy
+                  <div className="hidden items-center gap-1.5 rounded-full bg-emerald-50 px-2.5 py-1.5 text-[10px] font-bold text-emerald-700 sm:flex">
+                    <span className="h-1.5 w-1.5 rounded-full bg-emerald-700" /> All systems healthy
                   </div>
                   <div className="h-7 w-7 rounded-full bg-gradient-to-br from-blue-200 via-blue-500 to-[#060E1F] ring-2 ring-white" />
                 </div>
@@ -208,7 +208,7 @@ export default function Hero({ onOpenModal, onOpenDemo }: HeroProps) {
                       label="Net revenue retention"
                       value={data.retention}
                       change={data.retentionChange}
-                      icon={<TrendingUp size={14} className="text-emerald-600" />}
+                      icon={<TrendingUp size={14} className="text-emerald-700" />}
                       iconClassName="bg-emerald-50"
                     />
                     <MetricCard
@@ -224,7 +224,7 @@ export default function Hero({ onOpenModal, onOpenDemo }: HeroProps) {
                     <div className="flex items-center justify-between">
                       <div>
                         <p className="text-[11px] font-semibold uppercase tracking-[0.1em] text-slate-600">Revenue momentum</p>
-                        <p className="mt-1 text-xs font-medium text-slate-600">{data.chartLabel} <span className="mx-1.5 text-slate-500">•</span> <span className="font-bold text-emerald-600">+18.6% vs previous period</span></p>
+                        <p className="mt-1 text-xs font-medium text-slate-600">{data.chartLabel} <span className="mx-1.5 text-slate-500">•</span> <span className="font-bold text-emerald-700">+18.6% vs previous period</span></p>
                       </div>
                       <button type="button" onClick={() => onOpenModal("Revenue report demo")} className="hidden items-center gap-1 text-[10px] font-bold text-slate-600 sm:flex">
                         Export report <ArrowRight size={12} />
@@ -251,7 +251,7 @@ export default function Hero({ onOpenModal, onOpenDemo }: HeroProps) {
                 <aside className="rounded-2xl bg-[#060E1F] p-5 text-white sm:p-6">
                   <div className="flex items-center justify-between">
                     <div>
-                      <p className="text-[10px] font-bold uppercase tracking-[0.14em] text-blue-200/60">AI signal feed</p>
+                      <p className="text-[10px] font-bold uppercase tracking-[0.14em] text-blue-200">AI signal feed</p>
                       <h3 className="mt-1 font-[family-name:var(--font-plus-jakarta)] text-lg font-extrabold tracking-[-0.04em]">What needs attention</h3>
                     </div>
                     <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-white/10 text-[#5CA3FF]"><Sparkles size={14} /></span>
@@ -284,7 +284,7 @@ export default function Hero({ onOpenModal, onOpenDemo }: HeroProps) {
 
               <div className="flex items-center gap-5 border-t border-slate-100 bg-slate-50/60 px-4 py-3 sm:px-6">
                 <div className="flex items-center gap-1.5 text-[10px] font-semibold text-slate-600"><Clock3 size={12} /> Synced 2 min ago</div>
-                <div className="hidden items-center gap-1.5 text-[10px] font-semibold text-slate-600 sm:flex"><Check size={12} className="text-emerald-500" /> 4 data sources connected</div>
+                <div className="hidden items-center gap-1.5 text-[10px] font-semibold text-slate-600 sm:flex"><Check size={12} className="text-emerald-700" /> 4 data sources connected</div>
                 <button type="button" onClick={() => onOpenModal("Data connection demo")} className="ml-auto flex items-center gap-1 text-[10px] font-bold text-[#0066FF]">Manage data <ChevronDown size={12} /></button>
               </div>
             </div>

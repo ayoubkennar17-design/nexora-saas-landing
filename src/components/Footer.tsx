@@ -43,30 +43,30 @@ export default function Footer() {
           </div>
 
           <div>
-            <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-slate-500">Product</p>
+            <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-slate-400">Product</p>
             <ul className="mt-5 space-y-3">
               {productLinks.map((link) => <li key={link.label}><a href={link.href} className="text-sm font-medium text-slate-300 transition-colors hover:text-white">{link.label}</a></li>)}
             </ul>
           </div>
 
           <div>
-            <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-slate-500">Company</p>
+            <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-slate-400">Company</p>
             <ul className="mt-5 space-y-3">
               {companyLinks.map((link) => <li key={link.label}><a href={link.href} className="inline-flex items-center gap-1 text-sm font-medium text-slate-300 transition-colors hover:text-white">{link.label}{link.label === "Careers" && <ArrowUpRight size={13} />}</a></li>)}
             </ul>
           </div>
 
           <div>
-            <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-slate-500">Legal &amp; security</p>
+            <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-slate-400">Legal &amp; security</p>
             <div className="mt-5 inline-flex items-center gap-2 rounded-full border border-emerald-400/20 bg-emerald-400/10 px-3 py-2 text-[11px] font-bold text-emerald-300">
               <span className="relative flex h-2 w-2"><span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-60" /><span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-400" /></span>
               All Systems Operational
             </div>
             <div className="mt-5 flex items-start gap-2.5 text-xs leading-5 text-slate-400"><ShieldCheck size={16} className="mt-0.5 shrink-0 text-[#71AEFF]" /> SOC2 Type II controls and GDPR-ready data handling across every workspace.</div>
-            <div className="mt-5 flex flex-wrap gap-x-4 gap-y-2 text-xs font-medium text-slate-500"><a href="mailto:privacy@nexora.ai?subject=Privacy%20policy" className="transition-colors hover:text-slate-300">Privacy</a><a href="mailto:legal@nexora.ai?subject=Terms%20of%20service" className="transition-colors hover:text-slate-300">Terms</a><a href="mailto:security@nexora.ai?subject=Security%20question" className="transition-colors hover:text-slate-300">Security</a></div>
+            <div className="mt-5 flex flex-wrap gap-x-4 gap-y-2 text-xs font-medium text-slate-400"><a href="mailto:privacy@nexora.ai?subject=Privacy%20policy" className="transition-colors hover:text-slate-300">Privacy</a><a href="mailto:legal@nexora.ai?subject=Terms%20of%20service" className="transition-colors hover:text-slate-300">Terms</a><a href="mailto:security@nexora.ai?subject=Security%20question" className="transition-colors hover:text-slate-300">Security</a></div>
           </div>
         </div>
-        <div className="flex flex-col gap-3 pt-7 text-xs font-medium text-slate-500 sm:flex-row sm:items-center sm:justify-between">
+        <div className="flex flex-col gap-3 pt-7 text-xs font-medium text-slate-400 sm:flex-row sm:items-center sm:justify-between">
           <p>© 2026 Nexora Technologies Inc. All rights reserved.</p>
           <p>Built for teams who move with signal.</p>
         </div>

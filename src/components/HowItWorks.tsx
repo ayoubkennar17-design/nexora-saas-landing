@@ -6,21 +6,21 @@ const steps = [
     icon: Cable,
     title: "Connect Your Stack in One Click",
     description: "Link your CRM, billing, support, and product tools in minutes. Nexora starts organizing your revenue signals as soon as you connect.",
-    accent: "bg-blue-50 text-[#0066FF]",
+    accent: "bg-blue-50 text-blue-700",
   },
   {
     number: "02",
     icon: Brain,
     title: "AI Models Map Your Revenue Signals",
     description: "Our models learn your customer patterns, surface the drivers behind growth and risk, and translate noise into a clear operating picture.",
-    accent: "bg-violet-50 text-violet-600",
+    accent: "bg-violet-50 text-violet-700",
   },
   {
     number: "03",
     icon: Workflow,
     title: "Trigger Automated Retention & Upsell Flows",
     description: "Turn every insight into action with playbooks that reach the right account, owner, and channel before an opportunity goes cold.",
-    accent: "bg-emerald-50 text-emerald-600",
+    accent: "bg-emerald-50 text-emerald-700",
   },
 ];
 
@@ -53,10 +53,10 @@ export default function HowItWorks() {
                 <h3 className="mt-8 max-w-[260px] font-[family-name:var(--font-plus-jakarta)] text-xl font-extrabold leading-tight tracking-[-0.045em] text-[#060E1F]">{step.title}</h3>
                 <p className="mt-4 text-sm leading-6 text-slate-600">{step.description}</p>
                 <div className="mt-8 flex items-center gap-2 border-t border-slate-100 pt-4 text-[11px] font-bold text-slate-600">
-                  <span className="flex h-5 w-5 items-center justify-center rounded-full bg-emerald-50 text-emerald-600"><Check size={12} strokeWidth={3} /></span>
+                  <span className="flex h-5 w-5 items-center justify-center rounded-full bg-emerald-50 text-emerald-700"><Check size={12} strokeWidth={3} /></span>
                   {index === 0 ? "Secure OAuth connection" : index === 1 ? "Signals update continuously" : "Actions run on your rules"}
                 </div>
-                {index < steps.length - 1 && <ArrowRight size={17} className="absolute -right-6 top-9 z-20 hidden text-slate-300 lg:block" />}
+                {index < steps.length - 1 && <ArrowRight size={17} className="absolute -right-6 top-9 z-20 hidden text-slate-500 lg:block" />}
               </article>
             );
           })}

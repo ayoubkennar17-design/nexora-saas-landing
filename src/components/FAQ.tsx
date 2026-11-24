@@ -33,7 +33,7 @@ export default function FAQ() {
     <section id="faq" className="bg-[#F8FAFD] px-5 py-20 sm:px-8 sm:py-24 lg:px-10 lg:py-28">
       <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:gap-20">
         <div className="lg:sticky lg:top-28 lg:self-start">
-          <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-blue-50 text-[#0066FF]"><MessageCircleQuestion size={20} /></div>
+          <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-blue-50 text-blue-700"><MessageCircleQuestion size={20} /></div>
           <p className="mt-7 text-[11px] font-bold uppercase tracking-[0.18em] text-[#0066FF]">Questions, answered</p>
           <h2 className="mt-4 font-[family-name:var(--font-plus-jakarta)] text-3xl font-extrabold leading-[1.08] tracking-[-0.06em] text-[#060E1F] sm:text-4xl lg:text-[46px]">Everything you need to know before you scale.</h2>
           <p className="mt-5 max-w-sm text-base leading-7 text-slate-600">Still evaluating? Our revenue team can walk through your stack, use case, and success criteria.</p>

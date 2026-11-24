@@ -41,10 +41,11 @@ export default function Testimonials() {
           {testimonials.map((testimonial) => (
             <article key={testimonial.name} className="group flex flex-col rounded-[25px] border border-slate-200/80 bg-[#F8FAFD] p-6 transition-all duration-300 hover:-translate-y-1 hover:border-blue-200 hover:bg-white hover:shadow-[0_22px_55px_-28px_rgba(15,23,42,0.35)] sm:p-7">
               <div className="flex items-center justify-between">
-                <div className="flex gap-0.5 text-amber-400" aria-label="5 out of 5 stars">
-                  {Array.from({ length: 5 }).map((_, index) => <Star key={index} size={14} fill="currentColor" strokeWidth={1.5} />)}
+                <div className="flex gap-0.5 text-amber-600">
+                  <span className="sr-only">5 out of 5 stars</span>
+                  {Array.from({ length: 5 }).map((_, index) => <Star key={index} size={14} fill="currentColor" strokeWidth={1.5} aria-hidden="true" />)}
                 </div>
-                <Quote size={25} className="text-blue-100 transition-colors group-hover:text-blue-200" fill="currentColor" />
+                <Quote size={25} className="text-blue-500 transition-colors group-hover:text-blue-600" fill="currentColor" aria-hidden="true" />
               </div>
               <p className="mt-7 flex-1 text-[15px] leading-7 text-slate-600">“{testimonial.quote}”</p>
               <div className="mt-7 rounded-xl border border-slate-200/80 bg-white px-3.5 py-3 text-xs font-bold text-[#0066FF] shadow-[0_6px_18px_-15px_rgba(15,23,42,0.4)]">{testimonial.metric}</div>

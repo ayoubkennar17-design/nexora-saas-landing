@@ -100,7 +100,7 @@ export default function Pricing({ onOpenModal }: PricingProps) {
                     <p className="text-[11px] font-bold uppercase tracking-[0.14em] text-[#0066FF]">{plan.eyebrow}</p>
                     <h3 className="mt-3 font-[family-name:var(--font-plus-jakarta)] text-2xl font-extrabold tracking-[-0.05em] text-[#060E1F]">{plan.name}</h3>
                   </div>
-                  {plan.featured && <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-blue-50 text-[#0066FF]"><Zap size={17} fill="currentColor" /></span>}
+                  {plan.featured && <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-blue-50 text-blue-700"><Zap size={17} fill="currentColor" /></span>}
                 </div>
                 <p className="mt-4 min-h-[72px] text-sm leading-6 text-slate-600">{plan.description}</p>
                 <div className="mt-6 flex items-end gap-2 border-t border-slate-100 pt-6">
@@ -122,7 +122,7 @@ export default function Pricing({ onOpenModal }: PricingProps) {
                   <ul className="mt-4 space-y-3">
                     {plan.details.map((detail) => (
                       <li key={detail} className="flex items-start gap-2.5 text-sm font-medium text-slate-600">
-                        <span className="mt-0.5 flex h-4 w-4 shrink-0 items-center justify-center rounded-full bg-emerald-50 text-emerald-600"><Check size={11} strokeWidth={3} /></span>
+                        <span className="mt-0.5 flex h-4 w-4 shrink-0 items-center justify-center rounded-full bg-emerald-50 text-emerald-700"><Check size={11} strokeWidth={3} /></span>
                         {detail}
                       </li>
                     ))}

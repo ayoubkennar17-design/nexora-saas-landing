@@ -19,12 +19,12 @@ const integrations = [
 ];
 
 const riskAccounts = [
-  { name: "Vertex Systems", score: "92", status: "Critical", width: "92%", color: "bg-rose-500", textColor: "text-rose-500" },
-  { name: "Northstar Health", score: "68", status: "Watch", width: "68%", color: "bg-amber-400", textColor: "text-amber-500" },
-  { name: "Axiom Retail", score: "24", status: "Healthy", width: "24%", color: "bg-emerald-500", textColor: "text-emerald-500" },
+  { name: "Vertex Systems", score: "92", status: "Critical", width: "92%", color: "bg-rose-500", textColor: "text-rose-700" },
+  { name: "Northstar Health", score: "68", status: "Watch", width: "68%", color: "bg-amber-400", textColor: "text-amber-700" },
+  { name: "Axiom Retail", score: "24", status: "Healthy", width: "24%", color: "bg-emerald-500", textColor: "text-emerald-700" },
 ];
 
-function FeatureIcon({ children, className = "bg-blue-50 text-[#0066FF]" }: { children: React.ReactNode; className?: string }) {
+function FeatureIcon({ children, className = "bg-blue-50 text-blue-700" }: { children: React.ReactNode; className?: string }) {
   return <span className={`flex h-10 w-10 items-center justify-center rounded-xl ${className}`}>{children}</span>;
 }
 
@@ -47,7 +47,7 @@ function StandardFeatureCard({
       <h3 className="mt-7 font-[family-name:var(--font-plus-jakarta)] text-[17px] font-extrabold tracking-[-0.04em] text-[#060E1F]">{title}</h3>
       <p className="mt-3 text-sm leading-6 text-slate-600">{description}</p>
       {children}
-      <ArrowUpRight size={17} className="mt-auto self-end text-slate-300 transition-all duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-[#0066FF]" />
+      <ArrowUpRight size={17} className="mt-auto self-end text-slate-500 transition-all duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-[#0066FF]" />
     </article>
   );
 }
@@ -79,7 +79,7 @@ export default function FeaturesBento() {
                   <p className="text-[10px] font-bold uppercase tracking-[0.12em] text-slate-600">Account health radar</p>
                   <p className="mt-1 text-xs font-semibold text-[#060E1F]">12 accounts need a closer look</p>
                 </div>
-                <span className="rounded-full bg-rose-50 px-2 py-1 text-[10px] font-bold text-rose-500">Live scoring</span>
+                <span className="rounded-full bg-rose-50 px-2 py-1 text-[10px] font-bold text-rose-700">Live scoring</span>
               </div>
               <div className="mt-4 space-y-3">
                 {riskAccounts.map((account) => (
@@ -109,7 +109,7 @@ export default function FeaturesBento() {
             </div>
             <div className="relative z-10 mt-8 rounded-2xl border border-white/10 bg-white/[0.06] p-4 sm:p-5">
               <div className="flex items-center justify-between">
-                <p className="text-[10px] font-bold uppercase tracking-[0.12em] text-blue-100/60">Connected sources</p>
+              <p className="text-[10px] font-bold uppercase tracking-[0.12em] text-blue-200">Connected sources</p>
                 <span className="flex items-center gap-1.5 text-[10px] font-bold text-emerald-300"><span className="h-1.5 w-1.5 rounded-full bg-emerald-400" /> Syncing</span>
               </div>
               <div className="relative mt-6 grid grid-cols-2 gap-3">
@@ -120,7 +120,7 @@ export default function FeaturesBento() {
                   </div>
                 ))}
               </div>
-              <div className="mt-5 flex items-center gap-2 border-t border-white/10 pt-4 text-[10px] font-semibold text-blue-100/60"><Zap size={12} className="text-[#71AEFF]" /> 4,812 events processed this hour</div>
+              <div className="mt-5 flex items-center gap-2 border-t border-white/10 pt-4 text-[10px] font-semibold text-blue-200"><Zap size={12} className="text-[#71AEFF]" /> 4,812 events processed this hour</div>
             </div>
             <div className="pointer-events-none absolute -bottom-20 -right-12 h-56 w-56 rounded-full bg-[#0066FF] opacity-20 blur-3xl transition-transform duration-500 group-hover:scale-125" />
           </article>
@@ -134,21 +134,21 @@ export default function FeaturesBento() {
           />
           <StandardFeatureCard
             icon={<ShieldCheck size={19} strokeWidth={2.2} />}
-            iconClassName="bg-emerald-50 text-emerald-600"
+            iconClassName="bg-emerald-50 text-emerald-700"
             title="Enterprise-Grade Security"
             description="SOC2 Type II and GDPR-ready controls protect every customer signal without slowing your team down."
           />
           <StandardFeatureCard
             icon={<Gauge size={19} strokeWidth={2.2} />}
-            iconClassName="bg-amber-50 text-amber-600"
+            iconClassName="bg-amber-50 text-amber-700"
             title="Sub-50ms Query Performance"
             description="Explore millions of events with instant answers built for high-velocity revenue decisions."
           >
-            <div className="mt-5 flex items-center gap-2 text-[11px] font-bold text-emerald-600"><BarChart3 size={14} /> 48ms median response</div>
+            <div className="mt-5 flex items-center gap-2 text-[11px] font-bold text-emerald-700"><BarChart3 size={14} /> 48ms median response</div>
           </StandardFeatureCard>
           <StandardFeatureCard
             icon={<Users size={19} strokeWidth={2.2} />}
-            iconClassName="bg-sky-50 text-sky-600"
+            iconClassName="bg-sky-50 text-sky-700"
             title="Role-Based Team Permissions"
             description="Give every team the right level of visibility with simple, auditable workspace controls."
           >
